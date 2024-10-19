@@ -238,6 +238,7 @@ main {
 }
 .card__description {
   color: var(--DimGray);
+  padding-top: 0.2rem;
 }
 .card .avatar {
   padding-top: 1.5rem;
