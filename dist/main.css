@@ -189,6 +189,10 @@ body {
   font-size: 16px;
   color: var(--Black);
   font-family: var(--fontFamily);
+  background-color: var(--Kournikova);
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 .attribution {
