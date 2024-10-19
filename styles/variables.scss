@@ -5,16 +5,12 @@
   --DimGray:#6B6B6B;
   --White:#ffffff;
 
-  //breakpoints------------
-  --mobileSize: 375px;
-  --desktopSize: 1440px;
-
   //font weight--------------------
   --light: 300;
   --regular: 400;
   --medium: 500;
   --bold: 700;
-  --extera-bold:800;
+  --extra-bold:800;
 
   //  //font size-------------------
   --size-xxs: 8px;
@@ -30,4 +26,11 @@
 
   //font family---------------------
   --fontFamily: "Figtree", sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --size-xm: 12px;
+    --size-xlg:20px;  
+  }
 }
