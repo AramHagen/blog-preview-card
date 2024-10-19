@@ -12,16 +12,19 @@ body {
   line-height: 1.5rem;
   height: 100vh;
 }
-main{
+main {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 375px) {
+    margin: 0 1.5rem;
+  }
 }
 .card {
   background-color: var(--White);
   border-radius: 1.25rem;
   padding: 1.5rem;
   max-width: 384px;
-  width: 90%;
+  width: 100%;
   box-shadow: 8px 8px 0px #000000;
   border: 1px solid #000000;
   box-sizing: border-box;
