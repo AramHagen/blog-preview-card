@@ -3,13 +3,11 @@
   --Black:#111111;
   --DimGray:#6B6B6B;
   --White:#ffffff;
-  --mobileSize: 375px;
-  --desktopSize: 1440px;
   --light: 300;
   --regular: 400;
   --medium: 500;
   --bold: 700;
-  --extera-bold:800;
+  --extra-bold:800;
   --size-xxs: 8px;
   --size-xs: 10px;
   --size-xs-sm: 11px;
@@ -23,6 +21,12 @@
   --fontFamily: "Figtree", sans-serif;
 }
 
+@media screen and (max-width: 375px) {
+  :root {
+    --size-xm: 12px;
+    --size-xlg:20px;
+  }
+}
 /*--------------------reset--------------------------*/
 a,
 abbr,
@@ -193,6 +197,77 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+  line-height: 1.5rem;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--White);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  max-width: 384px;
+  width: 90%;
+  box-shadow: 8px 8px 0px #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+.card__image {
+  width: 100%;
+  border-radius: 0.62rem;
+}
+.card__label {
+  padding: 1.5rem 0 0.75rem;
+}
+.card__label span {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  background-color: var(--Kournikova);
+}
+.card__title {
+  padding: 0.75rem 0;
+}
+.card__description {
+  color: var(--DimGray);
+}
+.card .avatar {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.card .avatar__image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.text-preset1 {
+  line-height: 1.5rem;
+  font-size: var(--size-xlg);
+  font-weight: var(--extra-bold);
+}
+
+.text-preset2 {
+  line-height: 1.5rem;
+  font-size: var(--size-md);
+  font-weight: var(--medium);
+}
+
+.text-preset3 {
+  line-height: 1.5rem;
+  font-size: var(--size-xm);
+  font-weight: var(--medium);
+}
+
+.text-preset3-bold {
+  line-height: 1.5;
+  font-size: var(--size-xm);
+  font-weight: var(--extra-bold);
 }
 
 .attribution {
